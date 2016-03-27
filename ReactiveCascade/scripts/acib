@@ -59,7 +59,7 @@ function show-debug-unit-test-results {
     echo
     print-format cyan "Unit Tests:"
     echo
-    cat ${TRAVIS_BUILD_DIR}/*/build/test-results/debug/*
+    cat ${TRAVIS_BUILD_DIR}/*/*/build/test-results/debug/*
     print-format reset
     echo
 }
@@ -69,7 +69,7 @@ function show-release-unit-test-results {
     echo
     print-format cyan "Unit Tests:"
     echo
-    cat ${TRAVIS_BUILD_DIR}/*/build/test-results/release/*
+    cat ${TRAVIS_BUILD_DIR}/*/*/build/test-results/release/*
     print-format reset
     echo
 }
@@ -79,7 +79,7 @@ function show-android-test-results {
     echo
     print-format cyan "Android Tests:"
     echo
-    cat ${TRAVIS_BUILD_DIR}/*/build/outputs/androidTest-results/connected/*
+    cat ${TRAVIS_BUILD_DIR}/*/*/build/outputs/androidTest-results/connected/*
     print-format reset
     echo
 }
