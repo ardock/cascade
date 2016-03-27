@@ -18,7 +18,7 @@ function create-and-start-device {
     emulator -avd "${AVD_NAME:-test}" \
         -no-audio \
         -no-window \
-        -debug "${AVD_DEBUG:-avd_config}" &
+        -debug "${AVD_DEBUG:-init}" &
 }
 #        -no-skin \         # the emulator screen size is fixed removing this option, locally. CI??
 #        -no-boot-anim \    # wait-for-device-ready depends on bootanim. If disabled, add sleep time
